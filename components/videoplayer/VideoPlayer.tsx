@@ -228,13 +228,13 @@ export const VideoPlayer = ({ videoUrl }: { videoUrl: string | null }) => {
                     <Dropdown>
                       <DropdownTrigger>{`${playbackSpeed}x`}</DropdownTrigger>
                       <DropdownMenu aria-label="Playback Speed">
-                        <DropdownItem onClick={() => handleSpeedChange(1)}>
+                        <DropdownItem onClick={() => handleSpeedChange(1)} key={""}>
                           1x
                         </DropdownItem>
-                        <DropdownItem onClick={() => handleSpeedChange(1.5)}>
+                        <DropdownItem onClick={() => handleSpeedChange(1.5)} key={""}>
                           1.5x
                         </DropdownItem>
-                        <DropdownItem onClick={() => handleSpeedChange(2)}>
+                        <DropdownItem onClick={() => handleSpeedChange(2)} key={""}>
                           2x
                         </DropdownItem>
                       </DropdownMenu>

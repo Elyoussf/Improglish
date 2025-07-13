@@ -30,7 +30,7 @@ export const AccountDeleteModel = ({ onConfirm }: { onConfirm: () => void; }) =>
       </div>
       <Modal isOpen={isOpen} onOpenChange={onOpenChange} backdrop={"blur"}>
         <ModalContent>
-          {(onClose) => (
+          {(onClose: any) => (
             <>
               <ModalHeader className="flex flex-col gap-1">
                 Are you sure?

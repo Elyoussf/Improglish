@@ -20,7 +20,7 @@ export async function GET() {
         userId,
       },
     });
-
+    console.log("user data",userData)
     return NextResponse.json(userData, { status: 200 });
   } catch (error) {
     console.log("[user]", error);

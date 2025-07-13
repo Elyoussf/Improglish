@@ -8,7 +8,7 @@ import { Carousel as ResponsiveCarousel } from "react-responsive-carousel";
 
 export const Carousel = () => {
   return (
-    <ResponsiveCarousel autoPlay={true} infiniteLoop={true} autoFocus={true} interval={5000}>
+    <ResponsiveCarousel showThumbs={false} autoPlay={true} infiniteLoop={true} autoFocus={true} interval={5000}>
       <div className="w-full h-52 lg:h-96 relative">
         <Image src="/carousel_1.jpg" alt="learn" fill />
         <div className="absolute top-[20%] left-20 w-96 h-fit p-7 shadow-large text-black hidden lg:block">
